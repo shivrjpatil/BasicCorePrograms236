@@ -26,9 +26,7 @@ namespace BasicCoreProgram
             Console.WriteLine("TailCount:{0} headcount:{1}",Tailcount,Headcount);
             double TailPercentage = (Tailcount * 100) / num;
             double HeadPercentage = (Headcount * 100) / num;
-            Console.WriteLine("tail percenatge={0}% head percentage={1}%",TailPercentage, HeadPercentage);    
-           
-
+            Console.WriteLine("tail percenatge={0}% head percentage={1}%",TailPercentage, HeadPercentage);
         }
     }
 }

@@ -11,9 +11,19 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to c# Basic core Programs");
-            FlipCoin flipCoin=new FlipCoin();
-            flipCoin.FindPercentage();
-            
+            Console.WriteLine("1.FlipCoin \n 2.LeapYear");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                     FlipCoin flipCoin = new FlipCoin();
+                     flipCoin.FindPercentage();
+                    break;
+                case 2:
+                     LeapYear leap = new LeapYear();
+                     leap.Check();
+                    break;
+            }
             Console.ReadLine();
         }
     }
