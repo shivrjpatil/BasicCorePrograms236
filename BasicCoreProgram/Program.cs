@@ -11,6 +11,9 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to c# Basic core Programs");
+            FlipCoin flipCoin=new FlipCoin();
+            flipCoin.FindPercentage();
+            
             Console.ReadLine();
         }
     }
