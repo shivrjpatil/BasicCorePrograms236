@@ -11,7 +11,7 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to c# Basic core Programs");
-            Console.WriteLine("1.FlipCoin \n2.LeapYear\n3.Powere of Two");
+            Console.WriteLine("1.FlipCoin \n2.LeapYear\n3.Powere of Two\n4.Harmonic Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -26,6 +26,10 @@ namespace BasicCoreProgram
                 case 3:
                     PowerofTwo powerofTwo= new PowerofTwo();
                     powerofTwo.Power();
+                    break;
+                case 4:
+                    HarmonicNumber harmonicNumber = new HarmonicNumber();
+                    harmonicNumber.Harmonic();
                     break;
             }
             Console.ReadLine();
