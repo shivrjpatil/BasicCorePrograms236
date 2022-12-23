@@ -11,7 +11,7 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to c# Basic core Programs");
-            Console.WriteLine("1.FlipCoin \n 2.LeapYear");
+            Console.WriteLine("1.FlipCoin \n2.LeapYear\n3.Powere of Two");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -22,6 +22,10 @@ namespace BasicCoreProgram
                 case 2:
                      LeapYear leap = new LeapYear();
                      leap.Check();
+                    break;
+                case 3:
+                    PowerofTwo powerofTwo= new PowerofTwo();
+                    powerofTwo.Power();
                     break;
             }
             Console.ReadLine();
