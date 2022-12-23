@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to c# Basic core Programs");
-            Console.WriteLine("1.FlipCoin \n2.LeapYear\n3.Powere of Two\n4.Harmonic Number\n5.Prime Factor\n6.Quotient and Reaminder");
+            Console.WriteLine("1.FlipCoin \n2.LeapYear\n3.Powere of Two\n4.Harmonic Number\n5.Prime Factor\n6.Quotient and Reaminder\n7.Swap Two Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -38,6 +39,10 @@ namespace BasicCoreProgram
                 case 6:
                     QuotientRemainder quotientRemainder = new QuotientRemainder();
                     quotientRemainder.Div();
+                    break;
+                case 7:
+                    SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
+                    swapTwoNumbers.Swap();
                     break;
             }
             Console.ReadLine();
